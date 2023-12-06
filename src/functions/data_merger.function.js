@@ -65,6 +65,18 @@ app.http('data_merger', {
       ]);
     
       const tbDataList = mergeData(tbDataFromODS, staticData);
-      context.res = { body: tbDataList };
+      context.res = {  
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body:  JSON.stringify(tbDataList) };
+      return {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body:  JSON.stringify(tbDataList)
+      }
     }
 });
