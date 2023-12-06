@@ -60,4 +60,4 @@ jobs:
           app-name: 'trail-balance-adaptor'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_32E79AF0F37640B9A04B2C0E563D8B90 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29D402D941C948E5B82C64E187B415F1 }}
